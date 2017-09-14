@@ -22,8 +22,6 @@ To begin this lab, clone this repository onto your own computer:
 	
 	git clone https://github.com/iosdecal/ios-decal-lab1
 
-Though it is not required this semester, we encourage you to [fork the repository](https://help.github.com/articles/fork-a-repo/) so that you can have your own copy that you can push commits to (especially recommended if you're not very familiar with git and want more experience!). Ask a TA if you experience any issues downloading the lab spec.
-
 Once you've donwloaded the files onto your computer, open up the file **XcodeTour.xcodeproj**. If you've downloaded Xcode already, this will open up your project.
 
 Before starting, it may be helpful to open the file **Main.storyboard** (found in your project navigator in Xcode) to see the layout of this lab before starting.
