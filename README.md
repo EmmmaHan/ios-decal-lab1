@@ -40,7 +40,7 @@ If you passed this stage, move on to the next part of the lab by moving the entr
 
 ## question 3: View Controller Lifecycle + Breakpoints ##
 ### question 3: part 1 ###
-Run the app, and tap the "click me..." button. If you open up **Main.storyboard**, you'll notice the first screen you viewed has the class type **BoringViewController.swift** (Identity Inspector > Custom Class > Class). If you tap on the view controller to the left, you'll see no class is set! Currently there is no ViewController.swift file for the view controller in the Storyboard's attributes.
+Run the app, and tap the "click me..." button. If you open up **Main.storyboard**, you'll notice the first screen you viewed has the class type **BoringViewController.swift** (Identity Inspector > Custom Class > Class). If you tap on the view controller to the right, you'll see no class is set! Currently there is no ViewController.swift file for the view controller in the Storyboard's attributes.
 
 Setting the class of Storyboard view controller's allows us to programmatically interact with the UI elements in Interface Builder. If you look at **BoringViewController.swift**, for example, we are able to change the textcolor of the label programmatically, since we've created an outlet.
 
