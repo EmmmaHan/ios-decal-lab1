@@ -25,6 +25,17 @@ class ClassDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func displayResponse(success: Bool, withText text: String) {
+        responseLabel.text = text
+        
+        if success {
+            responseLabel.textColor = .red
+        }
+        
+        // Ignore
+        grade()
+    }
+    
 
     // MARK: - Server API
     
@@ -40,10 +51,7 @@ class ClassDetailViewController: UIViewController {
             fatalError(errorMessage!)
         }
         
-        if invalidRequest {
-            responseLabel.textColor = .red
-        }
-        responseLabel.text = responseString
+        displayResponse(success: invalidRequest, withText: responseString)
     }
     
     func encodeParameters(dictionary: [String : Any]) -> Data {

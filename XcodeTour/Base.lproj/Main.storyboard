@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
         <!--Define Variable View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DefineVariableViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="__q1" id="BYZ-38-t0r" customClass="DefineVariableViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
+            <point key="canvasLocation" x="137" y="134"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hcj-B7-run">
@@ -75,20 +75,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optionals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-uH-AcU">
-                                <rect key="frame" x="88" y="37" width="100" height="21"/>
+                                <rect key="frame" x="145.5" y="37" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLD-MB-72m">
-                                <rect key="frame" x="55" y="106" width="166" height="364"/>
+                                <rect key="frame" x="55" y="106" width="281" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Optionals as we saw in lecture allow variables to take on the value "nil". However, unwrapping optionals with ! is not safe since if the value is nil, then the app will crash. Your job now is to proceed to the next view and fix the code such that the app doesn't crash</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-Gg-7aM">
-                                <rect key="frame" x="16" y="20" width="39" height="55"/>
+                                <rect key="frame" x="16" y="20" width="96.5" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                     <color key="titleColor" red="0.0" green="0.33333333329999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6EN-Ml-Rc9" kind="showDetail" id="Qj9-Oo-qZY"/>
+                                    <segue destination="6EN-Ml-Rc9" kind="showDetail" identifier="generateStringSegue" id="Qj9-Oo-qZY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,6 +110,7 @@
                             <constraint firstItem="YD3-uH-AcU" firstAttribute="top" secondItem="1X5-xR-EVv" secondAttribute="bottom" constant="17" id="HKd-eO-Z5L"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s4x-Si-m4y" secondAttribute="trailingMargin" id="Icd-BE-uRq"/>
                             <constraint firstItem="YD3-uH-AcU" firstAttribute="centerX" secondItem="GLD-MB-72m" secondAttribute="centerX" id="Jp9-31-WHO"/>
+                            <constraint firstAttribute="trailing" secondItem="GLD-MB-72m" secondAttribute="trailing" constant="39" id="MKL-pz-Hwq"/>
                             <constraint firstItem="GLD-MB-72m" firstAttribute="top" secondItem="6QH-Gg-7aM" secondAttribute="bottom" constant="31" id="TQR-AP-kWM"/>
                             <constraint firstItem="6QH-Gg-7aM" firstAttribute="leading" secondItem="Wms-BE-hby" secondAttribute="leadingMargin" id="Xw6-4W-QZz"/>
                             <constraint firstItem="s4x-Si-m4y" firstAttribute="top" secondItem="GLD-MB-72m" secondAttribute="bottom" constant="16" id="bN4-2E-ofN"/>
@@ -129,7 +130,7 @@
         <!--Class List View Controller-->
         <scene sceneID="9C7-Jl-AW8">
             <objects>
-                <viewController id="sIQ-dZ-FdQ" customClass="ClassListViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sIQ-dZ-FdQ" customClass="ClassListViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CmA-00-4jn"/>
                         <viewControllerLayoutGuide type="bottom" id="9z9-Hk-LlV"/>
@@ -197,7 +198,7 @@
         <!--Class Detail View Controller-->
         <scene sceneID="QK8-7l-gA3">
             <objects>
-                <viewController id="5rg-Wa-iKl" customClass="ClassDetailViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5rg-Wa-iKl" customClass="ClassDetailViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5gu-Yw-S6C"/>
                         <viewControllerLayoutGuide type="bottom" id="tU8-1K-H1n"/>
@@ -245,7 +246,7 @@
         <!--Boring View Controller-->
         <scene sceneID="H9I-VS-yA4">
             <objects>
-                <viewController id="vhe-T6-dpK" customClass="BoringViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="__q3" id="vhe-T6-dpK" customClass="BoringViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TGg-Bj-hbj"/>
                         <viewControllerLayoutGuide type="bottom" id="TNA-OB-tn1"/>
@@ -335,7 +336,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Ux7-ZP-zad">
             <objects>
-                <navigationController id="YGs-Ac-xtO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="__q4" id="YGs-Ac-xtO" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="LUR-XB-8jZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -354,7 +355,7 @@
         <!--Optionals View Controller-->
         <scene sceneID="0e7-Fd-Skb">
             <objects>
-                <viewController id="6EN-Ml-Rc9" customClass="OptionalsViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="__q2" id="6EN-Ml-Rc9" customClass="OptionalsViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AXQ-cu-bIX"/>
                         <viewControllerLayoutGuide type="bottom" id="TiG-ne-yWj"/>
@@ -403,7 +404,7 @@
         <!--Nice Work View Controller-->
         <scene sceneID="dfg-7C-HQc">
             <objects>
-                <viewController id="Ycf-Lz-ObI" customClass="NiceWorkViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ycf-Lz-ObI" customClass="NiceWorkViewController" customModule="Autograder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J5l-3V-1eB"/>
                         <viewControllerLayoutGuide type="bottom" id="cdB-JS-AUl"/>

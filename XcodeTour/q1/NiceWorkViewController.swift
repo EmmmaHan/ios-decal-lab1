@@ -3,32 +3,33 @@
 //  XcodeTour
 //
 //  Created by Akilesh Bapu on 1/30/17.
+//  Modifications by Chris Zielinski.
 //  Copyright © 2017 org.iosdecal. All rights reserved.
 //
 
 import UIKit
+import SAConfettiView
 
 class NiceWorkViewController: UIViewController {
     
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet var textLabel: UILabel!
+    var confettiView: SAConfettiView!
     var textToDisplay: [String] = []
-//    var confettiView: SAConfettiView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        confettiView = SAConfettiView(frame: self.view.bounds)
-//        self.view.addSubview(confettiView)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if textToDisplay.count > 0 {
             let strToDisplay = textToDisplay[0]
-            if strToDisplay.characters.count == 0 {
+            if strToDisplay.isEmpty {
                 textLabel.text = "Not Quite! Please Try again"
             } else {
                 textLabel.text = "Nice work, Move on to the next stage!"
-//                confettiView.startConfetti()
+                let confettiView = SAConfettiView(frame: view.bounds)
+                view.addSubview(confettiView)
+                confettiView.startConfetti()
             }
         } else {
             textLabel.text = "Not Quite! Please Try again"

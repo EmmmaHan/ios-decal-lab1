@@ -13,6 +13,32 @@ class BoringViewController: UIViewController {
 
     @IBOutlet weak var boringLabel: UILabel!
     
+    // TODO: Starting from 1, fill in the order these methods are called. If the method is never called, leave it `nil`.
+    var viewControllerEventOrder: [String: Int?] = [
+        "viewDidAppear": nil,
+        "viewDidDisappear": nil,
+        "init()": nil,
+        "viewDidLoad": nil,
+        "init(nibName:bundle:)": nil,
+        "init?(coder:)": nil,
+        "viewWillDisappear": nil,
+        "viewWillAppear": nil
+    ]
+    
+    // MARK: - Initialization methods
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    // MARK: - View event notification methods
     override func viewDidLoad() {
         super.viewDidLoad()
         boringLabel.textColor = UIColor.green
@@ -34,13 +60,9 @@ class BoringViewController: UIViewController {
         super.viewDidAppear(animated)
     }
 
+    // MARK: - Action methods (Ignore)
     @IBAction func boringButtonWasPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToAnotherBoringViewController", sender: sender)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

@@ -4,33 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		H5HcMTjw6lsh86LiVeBWca5cA5A=
-		</data>
 		<key>Headers/CalCentralServer-Swift.h</key>
 		<data>
-		Lg4W1s55vhkwQiNWmQXf6AlFcE8=
+		OXy+PAWjm7ndvMqDNXHY/5uQq70=
 		</data>
 		<key>Headers/CalCentralServer.h</key>
 		<data>
-		2E3vIhKDaGePVXO4sSG+ubVaDbE=
+		zRrPa40O290R4IihsmbNR0Y1ADI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5YkStTNumsy1aUwKyT/jziEYtts=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		dP1YUqOqQKVaBMZYcy2oLgaHzb4=
+		3Ijy6zR3E9R8l5OgQPWkMtPOB4A=
 		</data>
 		<key>Modules/CalCentralServer.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		YSSZcePOiUXAexYSTvvSBDxaOzI=
+		iRMO+oJPzXtM8iB0lh8GljjP0wg=
 		</data>
 		<key>Modules/CalCentralServer.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		K3mHT/8VWyR8Niu0wKcCqg4SD94=
+		Zhublg5eyRJYbJeMEY6oTPWiKfQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,44 +35,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lg4W1s55vhkwQiNWmQXf6AlFcE8=
+			OXy+PAWjm7ndvMqDNXHY/5uQq70=
 			</data>
 			<key>hash2</key>
 			<data>
-			N7hL/7CHn4s0nmbsPDkrhu1blAHwmQZ0K2LF8ynlTeU=
+			H62jK/z8lbmLbf0yRsqgxyT+yczcJku9+6MhpwM+onY=
 			</data>
 		</dict>
 		<key>Headers/CalCentralServer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2E3vIhKDaGePVXO4sSG+ubVaDbE=
+			zRrPa40O290R4IihsmbNR0Y1ADI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oww5urbr8AfgpBVfpjYmWxnZBpb1TuHb+GUVh5/SK5M=
+			TcZwT1KFfmrvylZHptXgzlZhJ4CV7czYEjwHSqAZWic=
 			</data>
 		</dict>
 		<key>Modules/CalCentralServer.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YSSZcePOiUXAexYSTvvSBDxaOzI=
+			iRMO+oJPzXtM8iB0lh8GljjP0wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0lrLOIFOQvyXxtvjKWRfRMVkJy6LnBjw4wZ6FvokMdc=
+			Wr0o/wAzEyGH/lX1HzOys3kRlXFAfxXu520UhOtERqw=
 			</data>
 		</dict>
 		<key>Modules/CalCentralServer.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K3mHT/8VWyR8Niu0wKcCqg4SD94=
+			Zhublg5eyRJYbJeMEY6oTPWiKfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zIwQq5EGxOLA2gNR+fJxc/B1DieCrBx4znDFONYtRu8=
+			Zg2/N7zyqJWh8ylQSz1PGlHMdMX58Kn2yp8hxNdEw7k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
