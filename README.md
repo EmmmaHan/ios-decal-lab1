@@ -63,11 +63,13 @@ If you passed this stage, move on to the next part of the lab by moving the entr
 ## question 4: Using the Debugger ##
 CalCentral is developing an iOS application for their beloved platform, but they've encountered a bug and need your help. For some reason, the course enrollment functionality isn't working when a permission code is required. Regardless of whether the permission code is valid or invalid, it always results in an error. 
 
-They managed to track the bug down to the method called `submitEnrollmentRequest` in **ClassDetailViewController.swift**. This method interfaces their server API (`CalCentralServer.post()`) for enrolling in a course with a permission code. Their server API expects an encoded dictionary of `String` values, ignoring any and all other types. The method `encodeParameters()` takes care of encoding a dictionary to a JSON object. They're sure that this method, `base64EncodedString()`, and the dictionary keys are correctly implemented, so we can ignore those.
+They managed to track the bug down to the method called `submitEnrollmentRequest` in **ClassDetailViewController.swift**. This method interfaces their server API (`CalCentralServer.post()`) for enrolling in a course with a permission code. Their server API expects an encoded dictionary of `String` values, **ignoring any and all other types**. The method `encodeParameters()` takes care of encoding a dictionary to a JSON object. They're sure that this method, `base64EncodedString()`, and the dictionary keys are correctly implemented, so we can ignore those.
 
 Given the pre-populated valid permission code `274958`, find and patch the bug in `submitEnrollmentRequest`.
 
-> Hint: this nifty String initializer may help you: [init(describing:) - String](https://developer.apple.com/documentation/swift/string/2427941-init)
+> Hint: the [variables Quick Look feature](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/quick_look_data_types.html) in the debugger area could be useful.
+
+> Hint hint: this nifty String initializer may help you: [init(describing:) - String](https://developer.apple.com/documentation/swift/string/2427941-init)
 
 ## check-off ##
 Once you've finished the lab, you can check-off using this form https://goo.gl/forms/kVEIqkChKBthRRTM2. If you weren't able to finish before 8pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
