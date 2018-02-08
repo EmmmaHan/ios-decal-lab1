@@ -45,8 +45,8 @@ Run the app, and tap the "click me..." button. If you open up **Main.storyboard*
 Setting the class of Storyboard view controller's allows us to programmatically interact with the UI elements in Interface Builder. If you look at **BoringViewController.swift**, for example, we are able to change the textcolor of the label programmatically, since we've created an outlet.
 
 Your task:
-- create a Swift file (Cocoa Touch Class) for the View Controller labeled q3b in **Main.storyboard**. You may name it whatever you like (see the [lecture slides](http://iosdecal.com/Lectures/Lecture2.pdf#page=22) if you forgot how to do this)
-- go back to **Main.storyboard**, and select the q3b view controller. Set it's class type to the class you just created in the previous step (again, the lecture slides should clear this up if you're confused)
+- create a Swift file (Cocoa Touch Class) for the View Controller labeled q3b in **Main.storyboard**. You may name it whatever you like.
+- go back to **Main.storyboard**, and select the q3b view controller. Set it's class type to the class you just created in the previous step (See step 3, if you are struggling [https://guides.codepath.com/ios/Creating-Custom-View-Controllers](https://guides.codepath.com/ios/Creating-Custom-View-Controllers))
 - create an outlet in your code for the label in this view controller. Then, in viewDidLoad, change the text of the label to "i am a view controller with a class set 😊"
 
 ### question 3: part 2 ###
@@ -54,12 +54,7 @@ Open **BoringViewController.swift**. You'll see a few overriding functions. Thes
 
 To figure out which order these methods are called, you _could_ read one of many Medium articles about the subject, but instead, set breakpoints for each of the given overriding methods. Then, run your simulator, and note the order in which each method is called.
 
-Specifically, you should know (and we will ask you!) when each of the following lifecycle methods are called:
-- `viewDidAppear`
-- `viewDidDisappear`
-- `viewDidLoad`
-- `viewWillDisappear`
-- `viewWillAppear`
+Starting from 1, fill in the order these methods are called in the dictionary `viewControllerEventOrder`. If the method is never called, leave it `nil`.
 
 If you can't remember what each breakpoint button does, check out this article here - https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-beginners-5b0d0a39d711.
 
@@ -75,4 +70,4 @@ Given the pre-populated valid permission code `274958`, find and patch the bug i
 > Hint: this nifty String initializer may help you: [init(describing:) - String](https://developer.apple.com/documentation/swift/string/2427941-init)
 
 ## check-off ##
-Once you've finished the lab, you can check-off using this form https://goo.gl/forms/SC66Bcy3iPfGcup62. If you weren't able to finish before 8pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
+Once you've finished the lab, you can check-off using this form https://goo.gl/forms/kVEIqkChKBthRRTM2. If you weren't able to finish before 8pm, make sure to let a TA know you attended (do not fill out the google form), and be sure to check-off next week at the beginning of lab.
